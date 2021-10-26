@@ -1,0 +1,35 @@
+package ejercicio3;
+
+import java.io.ByteArrayOutputStream;
+
+
+public class ejercicio3 {
+	public byte[][] conseguirMatrizIdentidad(int dimension) {
+
+		if (dimension <= 0) {
+		throw new IllegalArgumentException("Argumento incorrecto");
+		}
+		byte[][] matriz = new byte[dimension][];
+
+		for (int i = 0; i < matriz.length; i++) {
+	
+		ByteArrayOutputStream fila = new ByteArrayOutputStream(dimension);
+		for (int j = 0; j < dimension; j++) {
+		fila.write(i == j ? 1 : 0);
+		}
+		try {
+		fila.close();
+
+		} catch (Exception e) {
+		System.out.println(e.toString());
+
+		}
+		matriz[i] = fila.toByteArray(); 
+		
+		}
+
+		return matriz;
+
+		}
+
+}

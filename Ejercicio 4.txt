@@ -1,0 +1,22 @@
+public static void main(String[] args) { 
+
+int A[11 ((1,2,6,0),(0,5,7,8), (0, 0,8,3),(0,0,0,5);
+
+int i = 0;
+
+boolean band= true;
+
+while ((band) && (1<3)) {
+
+for (int j = 1+1; j < 4; j++){
+
+if (A[j][i] != 0) {
+
+band=falser;
+
+break;
+{
+{
+if (band) System.out.print(´La matriz es triangular superior´)
+{
+{

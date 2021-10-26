@@ -1,0 +1,123 @@
+package examen.de.edd;
+
+
+
+
+public class ExamenDeEDD {
+
+
+  
+    public static void main(String[] args) {
+
+       Scanner in = new Scanner(System.in);
+
+
+       
+       //Llamada de matrices
+       
+       int M_1 [][] = new int [3][3];
+       
+       int M_2 [][] = new int [3][3];
+       
+       int M_3 [][] = new int [3][3]; 
+       
+       int M_Resultante [][] = new int [3][3];
+       
+       
+
+
+       // rellenado de la primera matriz
+        for (int i = 0; i < M_1.length ; i++) {
+            
+            for (int j = 0; j < M_1.length ; j++){
+
+               M_1 [i][j] = (int) (Math.random() * 8 );
+ 
+
+
+           }
+        
+
+         }
+        
+          //rellenado de la segunda Matriz//
+
+        for (int i = 0; i < M_2.length ; i++) {
+            
+           for (int j = 0; j < M_2.length ; j++){
+
+               M_2 [i][j] = (int) (Math.random() * 8);
+            
+           }
+   
+     
+         }
+        
+
+         //rellenado de la tercera Matriz//
+
+        for (int i = 0; i < M_3.length; i++) {
+            
+           for (int j = 0; j < M_3.length; j++){
+                
+              M_3 [i][j] = (int) (Math.random() * 6);
+            
+           }
+        
+
+         }
+        
+        //Operacion: suma de las matrices//
+
+        for (int i = 0; i <  M_2.length ; i++) {
+            
+           for (int j = 0; j < M_2.length ; j++){ 
+                  
+                M_Resultante [i][j] = M_2[i][j] + M_2[i][j];
+              
+           }
+        
+
+          }
+        
+        //Mostracion de los resultados//
+ 
+        for (int i = 0; i < M_2.length ; i++){
+ 
+                for (int j = 0; j < M_2.length ; j++){
+ 
+                    System.out.print( M_2[i][j]);
+                      
+           }
+
+
+          } 
+         
+        for (int i = 0; i < M_1.length ; i++){
+ 
+           for (int j = 0; j < M_1.length ; j++){
+
+              System.out.print("[" + M_1[i][j] + "]");
+                
+           }
+                    
+             System.out.println("");
+                
+           }
+                       
+               
+          for (int i = 0; i < M_Resultante.length ; i++){
+
+             for (int j = 0; j < M_Resultante.length ; j++){
+                      
+               System.out.print("[" + M_Resultante[i][j] + "]");
+                
+           }
+                   
+             System.out.println("");
+                
+           }
+               
+          }
+
+}
